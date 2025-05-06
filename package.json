@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A simple waitlist landing page using Tailwind CSS",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1",

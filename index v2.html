@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waitlist Landing Page</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bg-white h-screen">
+  
+<!-- NAVBAR -->
+
+<header class="bg-white">
+  <nav class="flex justify-between items-center w-[92%] mx-auto py-6">
+    <div>
+      <img class="h-10 w-auto" src="/Creatorshop Logo.png">
+    </div>
+    <div class="nav-links md:static md:min-h-fit md:w-auto absolute bg-white min-h-[60vh] left-0 -top-[1000px] w-full flex items-center px-5 transition-all duration-700">
+      <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">Features</a>
+        </li>
+        <li>
+          <a href="#">Company</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex items-center gap-6">
+      <button class="rounded-lg bg-limegreen border-lime px-3.5 py-2.5 text-sm font-semibold text-black shadow-xs hover:bg-lime">
+        Join Waitlist
+      </button>
+      <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const navLinks = document.querySelector(".nav-links")
+  function onToggleMenu(e){
+    e.name = e.name === "menu-outline" ? "close-outline" : "menu-outline"
+    navLinks.classList.toggle("top-[80px]")
+  }
+</script>
+
+</body>
+</html>
